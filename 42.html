@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSSBattle - #42</title>
+</head>
+<body>
+  <div class="head">
+    <div class="hair left"></div>
+    <div class="hair right"></div>
+    <div class="eye left"></div>
+    <div class="eye right"></div>
+    <div class="mount"></div>
+  </div>
+  <style>
+    body {
+      background: #293462;
+    }
+  
+    .head {
+      background: #FE5F55;
+      height: 200px;
+      width: 200px;
+      margin: auto;
+      position: relative;
+      top: 50%;
+      margin-top: -100px;
+      border-radius: 50% 50% 25% 25%;
+      overflow: hidden;
+    }
+  
+    .mount {
+      background: #FFF1C1;
+      position: absolute;
+      height: 10px;
+      width: 40px;
+      bottom: 20px;
+      border-radius: 9px;
+      left: 50%;
+      margin-left: -20px;
+    }
+  
+    .eye {
+      position: absolute;
+      background: #FFF1C1;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      bottom: 50px;
+    }
+  
+    .eye.left {
+      left: 20px;
+    }
+  
+    .eye.right {
+      right: 20px;
+    }
+  
+    .hair {
+      position: absolute;
+      background: #FFF1C1;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      bottom: 50px;
+      top: -50px;
+    }
+  
+    .hair.left {
+      left: 0;
+    }
+  
+    .hair.right {
+      right: 0;
+    }
+  </style>
+</body>
+</html>
